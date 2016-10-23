@@ -1,0 +1,62 @@
+/*** Properties of parent container for entering tweets ***/
+
+.new-tweet {
+  padding: 10px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 10px;
+  background: #eee;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+/***  Container heading properties ***/
+
+.new-tweet h2 {
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+/*** Text box properties  ***/
+
+textarea {
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*** Text box input properties ***/
+
+.new-tweet input {
+
+}
+
+/*** Character counter properties ***/
+
+.counter {
+  float: right;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+ /*{
+
+  font-size: 2em;
+  line-height: 2.5  ;
+  float: center;
+
+}*/

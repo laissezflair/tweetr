@@ -7,26 +7,69 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
+    <!-- Google Font API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" type="text/css" />
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="Stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="Stylesheet" href="/styles/posted-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/39a90cfde7.js"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/clientApp.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
 
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" width="80px" height="80px">
+      <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
+    <!-- Create a tweetin' form for the container -->
+
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form action="/tweets" method="post">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
+
+
+      <!-- Container for posted tweets -->
+      <section class="tweets">
+        <article class="indiv-tweet">
+          <header class="topline">
+            <img src="/images/face.png">
+            <p id='handle'>@JoeyJoeJoeShabbadoo</p>
+            <h3>Alias Jerry Lewis</h3>
+            <br>
+          </header>
+          <div class="tweet-body">
+            <p>The pale Usher—threadbare in coat, heart, body, and brain; I see him now.</p>
+          </div>
+          <footer class="date">
+            <p>This was a few days ago now.</p>
+            <!-- Icons for hover -->
+            <i class="fa fa-flag" aria-hidden="true"></i>
+            <i class="fa fa-retweet" aria-hidden="true"></i>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+          </footer>
+        </article>
+      </section>
+
     </main>
 
   </body>
